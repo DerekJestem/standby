@@ -2,6 +2,8 @@
 
 Webowa aplikacja zegara inspirowana trybem StandBy z iOS. Projekt stworzony z myślą o urządzeniach mobilnych – minimalny, konfigurowalny i gotowy do rozbudowy o dodatkowe funkcje (np. powiadomienia).
 
+- Możesz zobaczyć podgląd [tutaj](https://derekjestem.github.io/standby/public/index.html).
+
 ## Funkcje
 
 - Wiele stylów zegara
