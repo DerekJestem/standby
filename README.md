@@ -1,4 +1,4 @@
-# Custom Clock Web App
+# Custom StandBy
 
 Webowa aplikacja zegara inspirowana trybem StandBy z iOS. Projekt stworzony z myślą o urządzeniach mobilnych – minimalny, konfigurowalny i gotowy do rozbudowy o dodatkowe funkcje (np. powiadomienia).
 
@@ -19,4 +19,4 @@ Webowa aplikacja zegara inspirowana trybem StandBy z iOS. Projekt stworzony z my
 
 1. Sklonuj repozytorium:
    ```bash
-   git clone https://github.com/twoj-login/clock-app.git
+   git clone https://github.com/derekjestem/standby.git
