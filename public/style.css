@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'Abduction';
+    src: url(./assets/fonts/abduction2002.ttf);
+}
+
+@font-face {
+    font-family: 'Chomsky';
+    src: url(./assets/fonts/Chomsky.otf);
+}
+
+@font-face {
+    font-family: 'Dotmatri';
+    src: url(./assets/fonts/DOTMATRI.TTF);
+}
+
+@font-face {
+    font-family: 'DIGIB';
+    src: url(./assets/fonts/DS-DIGIB.TTF);
+}
+
+@font-face {
+    font-family: 'Graffity';
+    src: url(./assets/fonts/GraffitiYouth-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Miskan';
+    src: url(./assets/fonts/Miskan.ttf);
+}
+
+@font-face {
+    font-family: 'Moodcake';
+    src: url(./assets/fonts/Moodcake.ttf);
+}
+
+@font-face {
+    font-family: 'Square';
+    src: url(./assets/fonts/Square.ttf);
+}
+
+@font-face {
+    font-family: 'VCR';
+    src: url(./assets/fonts/VCR_OSD_MONO_1.001.ttf);
+}
+
+@font-face {
+    font-family: 'Vigro';
+    src: url(./assets/fonts/Virgo\ Delight.ttf);
+}
+
+:root {
+    --accent-color: #ad2638;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff42;
+    border-radius: 5px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Calibri', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+main {
+    position: fixed;
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-display {
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.clock {
+    min-width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--accent-color);
+}
+
+.clock-content {
+    background: none;
+}
+
+.colon {
+    color: var(--accent-color);
+    filter: brightness(2) hue-rotate(-25deg);
+}
+
+.style1 {
+    font-family: 'Moodcake';
+    font-size: 200px;
+    letter-spacing: -30px;
+}
+
+.g-l-0 {
+    background: none;
+    opacity: 0.75;
+}
+
+.g-l-1 {
+    background: transparent;
+    opacity: 0.75;
+    filter: brightness(1.25) hue-rotate(-25deg);
+}
+
+.style2 {
+    font-family: 'DIGIB';
+    font-size: 225px;
+}
+
+.style3 {
+    font-family: 'Abduction';
+    font-size: 190px;
+    padding-top: 45px;
+}
+
+.style4 {
+    font-family: 'Square';
+    font-size: 215px;
+    padding-top: 15px;
+}
+
+.style5 {
+    font-family: 'Miskan';
+    font-size: 215px;
+}
+
+.style6 {
+    font-family: 'Graffity';
+    font-size: 225px;
+    padding-bottom: 15px;
+}
+
+.style7 {
+    font-family: 'VCR';
+    padding-bottom: 20px;
+    font-size: 225px;
+}
+
+
+.widgets {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.widget {
+    min-width: 100%;
+    height: 100%;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.widget .icon {
+    width: 25px;
+    height: 25px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.widget .text {
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.accent-color-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.accent-color-preview {
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 15px -1px var(--accent-color);
+}
+
+.date .icon {
+    mask: url('./assets/icons/today.png') no-repeat center / contain;
+    -webkit-mask: url('./assets/icons/today.png') no-repeat center / contain;
+    background-color: var(--accent-color);
+}

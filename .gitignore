@@ -1,0 +1,15 @@
+# System
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Node (jeśli coś kiedyś dodasz)
+node_modules/
+
+# Buildy
+dist/
+build/
